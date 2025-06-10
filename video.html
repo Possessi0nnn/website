@@ -54,16 +54,9 @@
   <!-- Start of Main Content -->
   <div id="maincontent_container">
     <div id="maincontent">
-      <div id="maincontent">
-      
-      <div class="passcode">
-      <h3>Enter passcode :</h3>
-      <input type="password" id="passwordInput" placeholder="Passcode">
-      <button onclick="checkPassword()">Ok</button>
-      <p id="error" class="error"></p>
+      <div class="video">
+      <iframe width="444" height="333" src="https://www.youtube.com/embed/sb_BGclv4sA?si=zct5JEKHB31dueho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>     
       </div>
-      <p>email: possessi0nnn.contact@protonmail.com</p>
-      <p>A TrueGiftCorp© enterprise</p>
 </div>
   </div>
   <!-- End of Main Content -->
@@ -76,31 +69,8 @@
 </html>
 
 <style>
-.passcode{
-width: 333px;
-height: 111;
-margin: 0px auto 34px;
+.video{
+margin: 0px auto 0px;
 text-align: center;
-background-color: black;
-color: white;
-border-color: white;
-border: solid;
-}
-
-.passcode h3{
-margin: 10px auto 20px;
 }
 </style>
-
-  <script>
-    function checkPassword() {
-      const password = document.getElementById("passwordInput").value;
-      const correctPassword = "possessor"; // <-- à modifier selon ton mot de passe
-
-      if (password === correctPassword) {
-        window.location.href = "video.html"; // <-- redirige vers une autre page
-      } else {
-        document.getElementById("error").innerText = "error.";
-      }
-    }
-  </script>
